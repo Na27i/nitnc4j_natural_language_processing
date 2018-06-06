@@ -1,5 +1,0 @@
-﻿  NLP_100.c
-c:\users\oanaz\documents\personal\natural_language_processing\nlp\nlp_100\nlp_100.c(68): warning C4550: 式は引数リストのない関数として評価します。
-c:\users\oanaz\documents\personal\natural_language_processing\nlp\nlp_100\nlp_100.c(67): warning C4474: 'printf': 書式文字列に渡された引数の数が多すぎます
-  c:\users\oanaz\documents\personal\natural_language_processing\nlp\nlp_100\nlp_100.c(67): note: プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-  NLP_100.vcxproj -> C:\Users\oanaz\Documents\Personal\natural_language_processing\NLP\Debug\NLP_100.exe
