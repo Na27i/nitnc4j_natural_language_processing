@@ -9,7 +9,6 @@
     mecab_destroy(mecab); \
     return -1; }
 
-
 typedef struct wordStruct {
 	char *word;     //単語
 	int count;     //出てきた回数
@@ -19,7 +18,6 @@ typedef struct wordStruct {
 struct wordStruct *wordsTemp;     //入れ替えなどの時に一時的に構造体のアドレスをもつ
 struct wordStruct *wordsPre;     //wordsThis のアドレスを持っている構造体のアドレスをもつ(交換用の仮置き場)
 struct wordStruct *wordsNext;    //今指している構造体の次のアドレスをもつ
-
 
 int main(int argc, char **argv) {
 	FILE *file;     //ファイルポインタ
@@ -58,8 +56,6 @@ int main(int argc, char **argv) {
 			fseek(file, 0, SEEK_SET);     //ファイルポインタを先頭に戻す
 		}
 
-
-
 		FILE *outputFile;
 		char outputFileName[32] = "";
 		sprintf(outputFileName, "%s%03d%s", "..\\data\\tf_", filenum, ".txt");
@@ -68,8 +64,6 @@ int main(int argc, char **argv) {
 			printf("ファイルが開けません", outputFileName);
 			exit;
 		}
-
-
 
 		wordsList = NULL;
 
@@ -200,7 +194,6 @@ int main(int argc, char **argv) {
 							}
 							wordsPre = wordsThis;     //ひとつ前の構造体のアドレスを更新する
 							wordsThis = wordsThis->nextAddr;     //ここで参照する構造体のアドレスを更新する
-
 						}
 						else
 						{
@@ -212,7 +205,6 @@ int main(int argc, char **argv) {
 					{
 						break;
 					}
-
 				}
 			}
 		}
