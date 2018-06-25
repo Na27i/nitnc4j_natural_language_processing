@@ -81,7 +81,6 @@ int main(int argc, char **argv) {
 		node = mecab_sparse_tonode(mecab, string);
 		CHECK(node);
 
-
 		for (; node; node = node->next)
 		{
 			Flag = 0;
@@ -216,7 +215,6 @@ int main(int argc, char **argv) {
 							}
 							wordsPre = wordsThis;     //ひとつ前の構造体のアドレスを更新する
 							wordsThis = wordsThis->nextAddr;     //ここで参照する構造体のアドレスを更新する
-
 						}
 						else
 						{
@@ -228,7 +226,6 @@ int main(int argc, char **argv) {
 					{
 						break;
 					}
-
 				}
 			}
 		}
