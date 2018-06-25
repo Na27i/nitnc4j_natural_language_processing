@@ -47,7 +47,6 @@ int main(int argc, char **argv)
 
 	int listLength = 0;     //リストの長さ
 
-
 	//　↓　idfのリスト作成　↓
 	sprintf(fileName, "%s", "..\\data\\df_new.txt");
 	if ((file = fopen(fileName, "r")) == NULL)
@@ -132,7 +131,6 @@ int main(int argc, char **argv)
 		int tfVol = 0;
 		float tfWeight = 0;
 		tfwordsList = NULL;
-
 
 		while (fscanf(file, "%s\t%d\t%f\n", word, &tfVol, &tfWeight) != EOF)
 		{

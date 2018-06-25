@@ -84,7 +84,6 @@ int main(int argc, char **argv) {
 		for (; node; node = node->next)
 		{
 			Flag = 0;
-
 			if (node->posid > 3 && node->posid < 10)//記号
 				Flag = 1;
 			else if (node->posid > 12 && node->posid < 31)//副詞
@@ -152,7 +151,6 @@ int main(int argc, char **argv) {
 						{
 							//リストの先頭を指すポインタ変数に，新しく作った構造体のアドレスを代入する
 							wordsList = wordsNew;
-
 						}
 						else//すでにあるリストに追加するとき
 						{
