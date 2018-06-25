@@ -158,7 +158,7 @@ int main(int argc, char **argv) {
 		while (1)
 		{
 			listLength++;
-			wordsVolume++;
+			wordsVolume += wordsThis->count;
 			if (wordsThis->nextAddr == NULL)
 			{
 				//リストの末尾であるので，ループを抜ける
@@ -224,8 +224,8 @@ int main(int argc, char **argv) {
 			wordsThis = wordsList;
 			while (1)
 			{
-				printf("%s:%d:%f\n", wordsThis->word, wordsThis->count, ((float)wordsThis->count) / wordsVolume);
-				fprintf(outputFile, "%s\t%d\t%f\n", wordsThis->word, wordsThis->count, ((float)wordsThis->count) / wordsVolume);
+				printf("%s:%d:%f\n", wordsThis->word, wordsThis->count, (float)(wordsThis->count) / wordsVolume);
+				fprintf(outputFile, "%s\t%d\t%f\n", wordsThis->word, wordsThis->count, (float)(wordsThis->count) / wordsVolume);
 				if (wordsThis->nextAddr == NULL)
 				{
 					//リストの末尾であるので，ループを抜ける
