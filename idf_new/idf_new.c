@@ -131,6 +131,7 @@ int main(int argc, char **argv)
 		}
 	}
 
+	//　↓　ソート
 	for (int i = 0; i < listLength; i++)
 	{
 		if (wordsList != NULL)
@@ -175,7 +176,9 @@ int main(int argc, char **argv)
 			}
 		}
 	}
+	//　↑　ソート
 
+	//　↓　書き込み
 	if (wordsList->word != NULL)
 	{
 		wordsThis = wordsList;
@@ -194,6 +197,7 @@ int main(int argc, char **argv)
 			}
 		}
 	}
+	// ↑　書き込み
 
 	return 0;
 }
