@@ -4,6 +4,7 @@
 #include "mecab.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <math.h>
 
 typedef struct wordStruct {
@@ -22,7 +23,7 @@ int main(int argc, char **argv)
 	FILE *outputFile;     //ファイルポインタ(書きこみ)
 	char fileName[512] = "";    //ファイル名を格納するための配列
 	char outputFileName[512] = "";    //ファイル名を格納するための配列
-	
+
 	sprintf(outputFileName, "%sdf%s", "..\\data\\", ".txt");
 	if ((outputFile = fopen(outputFileName, "w")) == NULL)
 	{
@@ -181,7 +182,7 @@ int main(int argc, char **argv)
 		wordsThis = wordsList;
 		while (1)
 		{
-			fprintf(outputFile, "%s\t%d\t%f\n", wordsThis->word, wordsThis->count, (log10(NUM/ wordsThis->count))+1);
+			fprintf(outputFile, "%s\t%d\t%f\n", wordsThis->word, wordsThis->count, (log10(NUM / wordsThis->count)) + 1);
 			if (wordsThis->nextAddr == NULL)
 			{
 				//リストの末尾であるので，ループを抜ける

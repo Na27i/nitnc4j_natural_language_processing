@@ -145,15 +145,6 @@
   <ItemGroup>
     <ClCompile Include="idf.c" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="libmecab.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="libmecab.lib" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="mecab.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
